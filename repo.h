@@ -120,10 +120,10 @@ void flying_start(std::vector<repository_t> const& repositories, int argc, char 
 
 #define REPO_ARCHIVE_USB 1
 #define REPO_ARCHIVE_GITHUB_HTTPS 2
-#define REPO_ARCHIVE_TYPE REPO_ARCHIVE_USB // change this line to swith to other archive type
+#define REPO_ARCHIVE_TYPE REPO_ARCHIVE_GITHUB_HTTPS // change this line to swith to other archive type
 
 // don't change code below
-#if REPO_ARCHIVE_TYPE == REPO_ARCHIVE_GITHUB_HTTPS
+#if REPO_ARCHIVE_TYPE == REPO_ARCHIVE_USB
 host_type_t const archive_host_type = host_type_t::file;
 char const*const archive_host       = "../procts_repo";
 char const*const archive_subdir     = "git/";
